@@ -1,0 +1,45 @@
+
+<div class="widgets">
+    <div class="date faded">
+        <div class="date__hour"><span id="hour"></span><span id="second">:</span><span id="minute"></span></div>
+        <div id="date"></div>
+    </div>
+    <a href="https://openweathermap.org/api" class="weather" target="_blank" title="Go on Open Weather API">
+        <img src="http://openweathermap.org/img/w/{{weather.icon}}.png" alt="Icon">
+        <span class="weather__title">{{weather.city}}</span>
+        <div class="weather__subtitle">{{weather.temp}}°F</div>
+        <div class="weather__desc">{{weather.description}}</div> 
+    </a>
+</div>
+
+<div class="home">
+    <div class="home__inner">
+        <a href="/" class="home__links" data-set="0">
+            <div class="home__ico">
+                <img src="profile.svg" alt="Icon" class="home__icon animate__animated  ">
+            </div>
+        </a>
+        <a href="/" class="home__links" data-set="1">
+            <div class="home__ico">
+                <img src="cold.svg" alt="Icon" class="home__icon animate__animated">
+            </div>
+        </a>
+        <a href="/" class="home__links" data-set="2">
+            <div class="home__ico">
+                <img src="compass.svg" alt="Icon" class="home__icon animate__animated">
+            </div>
+        </a>
+        <a href="/" class="home__links" data-set="3">
+            <div class="home__ico">
+                <img src="calculator.svg" alt="Icon" class="home__icon animate__animated">
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="tab-modal faded">
+    <span id="id" class="tab-modal__text"></span>
+    <div class="content">
+        <p id="text-animation"></p>
+    </div>    
+</div>
